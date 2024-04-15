@@ -20,4 +20,7 @@ yarn dev
 - Api: contiene la logica del backend donde por medio de funciones con los verbos http get, post, delete y put consumimos los diferentes endpoints.
 
 > [!NOTE]
-> Libreria bootstrap para los estilos de la aplicacion
+> Libreria bootstrap para los estilos de la aplicacion.
+
+> [!IMPORTANT]
+> Para marcar una tarea como completada simplemente hacer click sobre el texto de descripcion de la tarea. Notaras que el cursor cambia a una mano.
