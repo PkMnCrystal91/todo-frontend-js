@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { deleteTodo, getTodos, toggleTodo } from "../api/api";
+import { useEffect } from "react";
+import { deleteTodo, toggleTodo } from "../api/api";
 
 import "./styles.css";
 
@@ -9,6 +9,12 @@ export const TodoItem = ({ tasks, setRefresh }) => {
     setRefresh(true);
   };
 
+  const onToggleTodo = () => {
+    toggleTodo(tasks.id);
+    setRefresh(true);
+  };
+
+  // useEffect y funcion setTimeout para efectos secundarios y regresar nuestro stado "global" de renderizado a falso.
   useEffect(() => {
     setTimeout(() => {
       setRefresh(false);
@@ -19,7 +25,7 @@ export const TodoItem = ({ tasks, setRefresh }) => {
     <div className="d-flex justify-content-between align-items-center">
       <label
         style={{ textDecoration: tasks.completado ? "line-through" : "none" }}
-        onClick={() => toggleTodo(tasks.id)}
+        onClick={onToggleTodo}
       >
         {tasks.descripcion}
       </label>

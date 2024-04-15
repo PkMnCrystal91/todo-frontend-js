@@ -1,8 +1,23 @@
-# React + Vite
+# Tasks (todo-list) Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Instalacion de dependencias
 
-Currently, two official plugins are available:
+```
+yarn
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+
+> Correr applicacion
+
+```
+yarn dev
+```
+
+### Elementos/Funciones que esta aplicacion incluye por carpetas.
+
+- Hooks: Contiene un hook customizado useForm.js que nos simplifica el uso de formularios, asi mismo reutilizando el mismo el cualquier posible formulario que nuestra aplicacion pueda tener.
+- Helpers: toastService.js archivo que contiene una funcion que nos ayuda a implementar libreria de react-toastify para mostrar elegantes mensajes en nuestros formularios para el ingreso de datos.
+- Api: contiene la logica del backend donde por medio de funciones con los verbos http get, post, delete y put consumimos los diferentes endpoints.
+
+> [!NOTE]
+> Libreria bootstrap para los estilos de la aplicacion
